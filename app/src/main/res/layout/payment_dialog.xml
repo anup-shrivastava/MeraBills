@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/dim_10dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_16dp"
+        tools:context=".ui.PaymentDialog">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_payment"
+            android:textSize="@dimen/sp_18"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:padding="@dimen/dim_8dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPaymentMode"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:hint="@string/select_payment_mode"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:editable="false"
+                android:textSize="@dimen/sp_16"
+                android:inputType="none"
+                android:clickable="true"
+                android:focusable="false" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_height="wrap_content"
+            android:hint="@string/amount"
+            app:startIconDrawable="@drawable/ic_rupee"
+            android:layout_marginTop="@dimen/dim_8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:id="@+id/linearLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etProvider"
+                android:layout_width="match_parent"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_height="wrap_content"
+                android:hint="@string/provider"
+                android:layout_marginTop="@dimen/dim_8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etReference"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/transaction_reference"
+                android:layout_marginTop="@dimen/dim_8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/dim_8dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="@dimen/dim_5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:layout_gravity="center"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="@dimen/dim_5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+

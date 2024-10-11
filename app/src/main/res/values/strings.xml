@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MeraBills</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="amount_in_rs">Amount (Rs)</string>
+    <string name="total_amount">Total Amount: ₹</string>
+    <string name="total_amount_rs_0">Total Amount: Rs. 0</string>
+    <string name="please_enter_amount">Please Enter Amount</string>
+    <string name="invalid_amount">Invalid Amount</string>
+    <string name="please_select_payment_mode">Please Select Payment Mode</string>
+    <string name="all_payments">All Payments :</string>
+    <string name="add_payment">Add Payment</string>
+    <string name="save">Save</string>
+    <string name="provider">Provider</string>
+    <string name="transaction_reference">Transaction Reference</string>
+    <string name="cancel">Cancel</string>
+    <string name="amount">Amount</string>
+    <string name="select_payment_mode">Select Payment Mode</string>
+    <string name="add_new_payment">Add New Payment</string>
+    <string name="no_payment_modes_available_please_delete_payment_to_add_new">No payment modes available, Please delete payment to add new</string>
+
+</resources>
